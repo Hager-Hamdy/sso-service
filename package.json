@@ -1,0 +1,50 @@
+{
+  "name": "sso-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node --require ./sequelize-datatypes/index.js index.js",
+    "start": "nodemon",
+    "dev": "nodemon index.js",
+    "test": "NODE_ENV=test mocha --require __mocks__/index.js  --reporter spec --exit --timeout 10000 \"tests/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dafa-Co/ibbil_auth_service.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dafa-Co/ibbil_auth_service/issues"
+  },
+  "homepage": "https://github.com/Dafa-Co/ibbil_auth_service#readme",
+  "dependencies": {
+    "@sentry/browser": "^7.8.0",
+    "@sentry/tracing": "^7.8.0",
+    "axios": "^0.26.1",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "express-validation": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "mocha": "^9.2.2",
+    "mockery": "^2.1.0",
+    "moment": "^2.29.2",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.3",
+    "nodemailer-mock": "^1.5.11",
+    "read-excel-file": "^5.4.4",
+    "redis": "^4.2.0",
+    "sequelize": "^5.8.12",
+    "sinon": "^13.0.2",
+    "umzug": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.4.1"
+  }
+}
